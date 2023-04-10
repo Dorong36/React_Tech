@@ -35,9 +35,6 @@ function todoReducer(todos, action){
 function App() {
 
   const [todos, dispatch] = useReducer(todoReducer, undefined, createBulkTodos)
-
-  // 고윳값으로 사용될 id
-  // ref를 사용하여 변수 담기
   const nextId = useRef(2501)
 
   const onInsert = useCallback(

@@ -19,25 +19,25 @@ function createBulkTodos() {
 
 function App() {
 
-  // const [todos, setTodos] = useState([
-  //   {
-  //     id : 1,
-  //     text : '1111',
-  //     checked : true
-  //   },
-  //   {
-  //     id : 2,
-  //     text : '222',
-  //     checked : true
-  //   },
-  //   {
-  //     id : 3,
-  //     text : '3333',
-  //     checked : false
-  //   },
-  // ]);
+  const [todos, setTodos] = useState([
+    {
+      id : 1,
+      text : '밥먹기',
+      checked : true
+    },
+    {
+      id : 2,
+      text : '공부하기',
+      checked : true
+    },
+    {
+      id : 3,
+      text : '잠자기',
+      checked : false
+    },
+  ]);
 
-  const [todos, setTodos] = useState(createBulkTodos);
+  // const [todos, setTodos] = useState(createBulkTodos);
 
   // 고윳값으로 사용될 id
   // ref를 사용하여 변수 담기
